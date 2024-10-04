@@ -1,0 +1,56 @@
+Pour créer un fichier localement sur GitHub, voici les étapes à suivre :
+
+Prérequis :
+
+Assurez-vous d'avoir Git installé sur votre ordinateur.
+
+Avoir un compte GitHub et un dépôt (repository) créé.
+
+
+Étapes pour créer un fichier localement et le pousser sur GitHub :
+
+1. Cloner un dépôt GitHub en local :
+
+Ouvrez votre terminal ou l’invite de commande et entrez la commande suivante pour cloner un dépôt :
+
+git clone https://github.com/USERNAME/NOM_DU_DEPOT.git
+
+Remplacez USERNAME par votre nom d'utilisateur GitHub et NOM_DU_DEPOT par le nom de votre dépôt.
+
+2. Se déplacer dans le répertoire cloné :
+
+cd NOM_DU_DEPOT
+
+3. Créer un fichier localement :
+
+Vous pouvez créer un fichier en utilisant des commandes comme touch ou un éditeur de texte. Par exemple, pour créer un fichier README.md :
+
+touch README.md
+
+Vous pouvez aussi utiliser un éditeur comme nano :
+
+nano README.md
+
+Ajoutez le contenu que vous souhaitez puis enregistrez.
+
+4. Ajouter le fichier au suivi Git :
+
+Ajoutez les fichiers modifiés ou créés à l'index Git en utilisant :
+
+git add .
+
+5. Valider les modifications :
+
+Créez un commit avec un message décrivant vos modifications :
+
+git commit -m "Ajout du fichier README"
+
+6. Pousser les modifications sur GitHub :
+
+Poussez vos modifications locales vers le dépôt distant (GitHub) :
+
+git push origin main
+
+(Remplacez main par la branche où vous souhaitez pousser les modifications si nécessaire.)
+
+Une fois la commande exécutée, le fichier sera disponible sur votre dépôt GitHub.
